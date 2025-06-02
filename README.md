@@ -6,6 +6,33 @@ Real-time face mask detection using YOLOv5. This model classifies whether a pers
 
 [Kaggle - Face Mask Detection](https://www.kaggle.com/datasets/andrewmvd/face-mask-detection)
 
+## Directory Structure
+
+```bash
+face-mask-detection/
+├── src/
+│   ├── dataset_loader.py
+│   ├── model.py
+│   └── train_eval.py
+├── notebooks/
+│   └── face_mask_detection.ipynb
+├── app/
+│   └── webcam_inference.py
+├── models/
+├── data/
+├── visualizations/
+├── README.md
+└── requirements.txt
+
+```
+
+- `notebooks/`: Notebook training dan evaluasi
+- `src/`: Script model dan data loader
+- `data/`: Dataset dari Kaggle
+- `models/`: Model hasil training
+- `visualizations/`: Grafik training dan evaluasi
+- `app/`: Aplikasi webcam deteksi masker
+
 ## Classes
 
 - with_mask
@@ -20,18 +47,27 @@ cd yolov5
 pip install -r requirements.txt
 ```
 
-## Training
+## Usage Steps
 
-```bash
-python train.py --img 416 --batch 16 --epochs 50 --data data/face_mask_data.yaml --cfg models/yolov5s.yaml --weights yolov5s.pt
-```
+1. Simpan `kaggle.json` Anda di luar folder proyek ini
+2. Install dependensi: `pip install -r requirements.txt`
+3. Jalankan `notebooks/face_mask_detection.ipynb` untuk training
+4. Jalankan `app/webcam_inference.py` untuk aplikasi webcam
 
-## Inference
+## 📥 Preparation Steps
 
-```bash
-python detect.py --weights runs/train/exp/weights/best.pt --img 416 --conf 0.4 --source data/images/val
-```
+1. Install library:
 
-## Example Result
+   ```bash
+   pip install -r requirements.txt
 
-![example](runs/detect/exp/image1.jpg)
+   ```
+
+2. Save kaggle.json outside the project folder
+3. Download the dataset from Kaggle using `src/dataset_loader.py`:
+
+   ```bash
+   from src.dataset_loader import download_dataset
+   download_dataset("C:/Users/YourName/kaggle.json")
+
+   ```
