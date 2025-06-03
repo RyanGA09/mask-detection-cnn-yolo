@@ -44,4 +44,4 @@ def organize_dataset(
             if os.path.exists(src_image_path):
                 shutil.copy(src_image_path, dst_image_path)
 
-    print("✅ Dataset telah dipindahkan ke folder per kelas di:", output_dir)
+    print("✅ The dataset has been moved to the per-class folder in the:", output_dir)

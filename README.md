@@ -68,6 +68,6 @@ pip install -r requirements.txt
 
    ```bash
    from src.dataset_loader import download_dataset
-   download_dataset("C:/Users/YourName/kaggle.json")
+   download_dataset("C:/Users/YourName/.kaggle/kaggle.json")
 
    ```
