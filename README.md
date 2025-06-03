@@ -10,7 +10,8 @@ Real-time face mask detection using YOLOv5. This model classifies whether a pers
 
 ```bash
 face-mask-detection/
-├── src/
+├── module/
+│   ├── __init__.py
 │   ├── dataset_loader.py
 │   ├── model.py
 │   └── train_eval.py
@@ -64,10 +65,10 @@ pip install -r requirements.txt
    ```
 
 2. Save kaggle.json outside the project folder
-3. Download the dataset from Kaggle using `src/dataset_loader.py`:
+3. Download the dataset from Kaggle using `module/dataset_loader.py`:
 
    ```bash
-   from src.dataset_loader import download_dataset
-   download_dataset("C:/Users/YourName/.kaggle/kaggle.json")
+   from module import download_dataset
+   download_dataset(kaggle_json_path)
 
    ```
