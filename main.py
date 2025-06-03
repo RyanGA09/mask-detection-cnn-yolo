@@ -5,7 +5,7 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 # from src.model import create_model
 # from src.dataset_loader import download_dataset, organize_dataset
 # from src.train_eval import plot_training, evaluate_model
-from src import download_dataset, organize_dataset, create_model, plot_training, evaluate_model
+from module import download_dataset, organize_dataset, create_model, plot_training, evaluate_model
 
 # Step 1: Unduh dataset dari Kaggle
 kaggle_json_path = "../kaggle.json"  # path kaggle.json di luar folder proyek
