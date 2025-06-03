@@ -21,11 +21,11 @@ def organize_dataset(
         'mask_weared_incorrect': 'mask_weared_incorrect'
     }
 
-    # Buat folder kelas jika belum ada
+    # Create a class folder if it doesn't already exist
     for label in labels_map.values():
         os.makedirs(os.path.join(output_dir, label), exist_ok=True)
 
-    # Baca file XML dan pindahkan gambar ke folder kelas sesuai label
+    # Read the XML file and move the images to the class folder as labeled
     for xml_file in os.listdir(annotations_dir):
         if not xml_file.endswith('.xml'):
             continue

@@ -26,12 +26,12 @@ face-mask-detection/
 
 ```
 
-- `notebooks/`: Notebook training dan evaluasi
-- `src/`: Script model dan data loader
-- `data/`: Dataset dari Kaggle
-- `models/`: Model hasil training
-- `visualizations/`: Grafik training dan evaluasi
-- `app/`: Aplikasi webcam deteksi masker
+- `notebooks/`: Notebook training and evaluation
+- `src/`: Script model and data loader
+- `data/`: Dataset from Kaggle
+- `models/`: Result training model
+- `visualizations/`: Training and evaluation graph
+- `app/`: Mask detection webcam app
 
 ## Classes
 
@@ -49,10 +49,10 @@ pip install -r requirements.txt
 
 ## Usage Steps
 
-1. Simpan `kaggle.json` Anda di luar folder proyek ini
-2. Install dependensi: `pip install -r requirements.txt`
-3. Jalankan `notebooks/face_mask_detection.ipynb` untuk training
-4. Jalankan `app/webcam_inference.py` untuk aplikasi webcam
+1. Save your `kaggle.json` outside this project folder
+2. Install the dependencies: `pip install -r requirements.txt`
+3. Run `notebooks/face_mask_detection.ipynb` for training
+4. Run `app/webcam_inference.py` for webcam application 4.
 
 ## 📥 Preparation Steps
 
