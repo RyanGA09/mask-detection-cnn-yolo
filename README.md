@@ -1,5 +1,3 @@
-<!-- # Face Mask Detection using CNN and YOLOv5 😷 -->
-
 # Face Mask Detection using CNN (MobileNetV2) and YOLOv5 😷
 
 Real-time face mask detection using YOLOv5. This model classifies whether a person is:
@@ -76,28 +74,6 @@ pip install -r requirements.txt
 ```
 
 ## 🧠 CNN Model Architecture
-
-<!-- ### 🧬 CNN
-
-Besides YOLOv5 for detection, this project includes a CNN-based classification model using Keras with the following architecture:
-
-- Input Shape: 224x224x3 (RGB image)
-- Conv2D (32 filters, 3x3, ReLU)
-- MaxPooling2D (2x2)
-- Conv2D (64 filters, 3x3, ReLU)
-- MaxPooling2D (2x2)
-- Conv2D (128 filters, 3x3, ReLU)
-- MaxPooling2D (2x2)
-- Flatten
-- Dense (256 units, ReLU)
-- Dropout (0.5)
-- Output Layer: Dense (3 units, Softmax for 3-class classification)
-
-Compiled with:
-
-- Loss: Categorical Crossentropy
-- Optimizer: Adam
-- Metrics: Accuracy -->
 
 ### 🧬 CNN (MobileNetV2)
 
