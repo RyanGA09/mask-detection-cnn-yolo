@@ -20,6 +20,7 @@ face-mask-detection/
 ├── app/
 │   └── webcam_inference.py
 ├── models/
+│   └── dnn/
 ├── data/
 ├── visualizations/
 ├── README.md
